@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-02-13 17:18:18 by Eclipse SUMO netedit Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumocfg-file value="C:\CHAN_DATA\Japan\Test\Traciwithflow.sumocfg"/>
+        <route-files value="C:\CHAN_DATA\Japan\Test\Traciflow.rou.xml"/>
+        <sumo-net-file value="C:\CHAN_DATA\Japan\Test\test_withFlow.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\CHAN_DATA\Japan\Test\test_withFlow.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="true"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-6.10,58.66,500.00,58.66" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id="E0" from="J0" to="J1" priority="-1">
+        <lane id="E0_0" index="0" speed="5.00" length="506.10" shape="-6.10,53.86 500.00,53.86"/>
+        <lane id="E0_1" index="1" speed="5.00" length="506.10" shape="-6.10,57.06 500.00,57.06"/>
+    </edge>
+
+    <junction id="J0" type="dead_end" x="-6.10" y="58.66" incLanes="" intLanes="" shape="-6.10,58.66 -6.10,52.26"/>
+    <junction id="J1" type="dead_end" x="500.00" y="58.66" incLanes="E0_0 E0_1" intLanes="" shape="500.00,52.26 500.00,58.66"/>
+
+</net>
